@@ -9,10 +9,10 @@
 			
 			var message = {
 				//action: "https://api.twitter.com/oauth/access_token",
-				action: "http://localhost:8000/tSimpleProvider/auth/access_token",
+				action: "http://tfactory.com:8000/tSimpleProvider/auth/access_token",
 				method: "GET",
 				parameters: {
-					oauth_consumer_key: "b66c2730-84bc-47fc-8d95-b3d857acca63",
+					oauth_consumer_key: "ac990f60-2bed-4298-9a59-5f48836ee428",
 					oauth_signature_method: "HMAC-SHA1",
 					oauth_token: document.getElementById("request-token").value,
 					oauth_verifier: document.getElementById("verifier").value
@@ -21,7 +21,7 @@
 
 			OAuth.setTimestampAndNonce(message);
 			OAuth.SignatureMethod.sign(message, {
-				consumerSecret: "572653353a5cdfdbd8c6b0251e6317d1",
+				consumerSecret: "a1cf9e7764445125a3c90dc407e20f3d",
 				tokenSecret : document.getElementById("request-secret").value
 				});
 			
